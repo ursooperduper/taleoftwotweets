@@ -3,7 +3,7 @@ var Client        = require('node-rest-client').Client;
 var Twit          = require('twit');
 var async         = require('async');
 var inflection    = require('inflection');
-var wordFilter    = require('wordFilter');
+var wordFilter    = require('wordfilter');
 
 var t = new Twit({
   consumer_key        : process.env.TWOTWEETS_CONSUMER_KEY,
