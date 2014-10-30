@@ -1,0 +1,25 @@
+{
+  "name": "taleoftwotweets",
+  "version": "1.0.0",
+  "description": "A bot that takes the best and worst of tweets and puts them together.",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bot.js"
+  },
+  "author": "Sarah Kuehnle",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^0.9.0",
+    "inflection": "^1.5.1",
+    "lodash": "^2.4.1",
+    "node-rest-client": "^1.4.1",
+    "twit": "^1.1.18",
+    "wordfilter": "^0.1.7"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}
