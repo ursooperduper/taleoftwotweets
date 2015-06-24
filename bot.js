@@ -139,9 +139,7 @@ composeTweet = function(botData, cb) {
   var tweetPart2      = ', it was the worst of ';
   var twitterURL      = 'http://twitter.com/';
   var line1           = tweetPart1 + inflection.pluralize(botData.bestNoun) + tweetPart2 + inflection.pluralize(botData.worstNoun) + '.';
-  var line2           = twitterURL + botData.best.username + '/status/' + botData.best.tweetid;
-  var line3           = twitterURL + botData.worst.username + '/status/' + botData.worst.tweetid;
-  botData.tweetBlock  = line1 + '\n' + line2 + '\n' + line3;
+  botData.tweetBlock  = line1;
   cb(null, botData);
 };
 
